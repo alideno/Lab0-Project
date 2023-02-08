@@ -26,10 +26,5 @@ public class average {
         output += numbers[numbers.length-1]+"}";
         return output;
     }
-    public static void main(String[] args) {
-        int[] numbers = {1,2,3,4,5,6};
-        System.out.println(getAverage(numbers));
-        int[] numbers2 = getDifferance(numbers);
-        System.out.println(ArrayString(numbers2));
-    }
+
 }
