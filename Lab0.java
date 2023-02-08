@@ -1,5 +1,9 @@
-/* @Rasul Ibrahimzade    
+/** This is a method implementing the first requirement of the fist lab 
+ * 
+ * @author Rasul Ibrahimzade    
  * 07.02.2023   12:06
+ * 
+ * @edits Deniz Şahin
  */
 
 import java.util.Arrays;
@@ -8,7 +12,7 @@ import java.util.Scanner;
 
 class Lab0
 {
-    public static void main(String[] args) 
+    public static int[] randomArray() 
     {
         // 1.Given an array size, create an int array that contains random integers in the range [0,100]. All the remaining functionality will operate on this array.
         // Takes a value from a user to determine the size of the array. Then, creates an array with random numbers in it for the range of [1 , 100]. 
@@ -24,12 +28,12 @@ class Lab0
 
         for ( int i = 0; i < arraySize; i++ )
         {
-            int randomNumber = random.nextInt(100) + 1;
+            int randomNumber = random.nextInt(101);
             // System.out.println(randomNumber); // Control purposes
             numbers[i] = randomNumber;
         }
 
-
+        return numbers;
         // System.out.println( Arrays.toString(numbers)); // Control purposes
 
 
